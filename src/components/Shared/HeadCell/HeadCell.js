@@ -6,6 +6,6 @@ const HeadCell = ({ children }) => {
   return <th className={css.cell}>{children}</th>;
 };
 HeadCell.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.string,
 };
 export default HeadCell;

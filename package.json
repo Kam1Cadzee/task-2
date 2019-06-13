@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
+    "gh-pages": "^2.0.1",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "query-string": "^6.7.0",
@@ -61,5 +62,5 @@
     "lint-staged": "^8.1.5",
     "prettier": "^1.17.0"
   },
-  "homepage": "https://github.com.Kam1Cadzee/goit-react-hw-05-budget-planner-fork"
+  "homepage": "https://github.com.Kam1Cadzee/task-2"
 }

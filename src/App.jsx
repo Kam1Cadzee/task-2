@@ -13,7 +13,6 @@ import SelectedItems from './components/SelectedItems/SelectedItems';
 import Loader from './components/Loader/Loader';
 
 const App = ({ length, isLoading }) => {
-  console.log(isLoading);
   return (
     <div style={{ margin: '0 10px' }}>
       <FormSearch />

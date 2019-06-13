@@ -33,7 +33,7 @@ const getPages = (length, currentPage, range) => {
 const Pagination = ({ count, length, currentPage }) => {
   currentPage = +currentPage;
   const maxPages = Math.ceil(length / count);
-  const { isStart, isEnd, pages } = getPages(maxPages, currentPage, 2);
+  const { pages } = getPages(maxPages, currentPage, 2);
 
   return (
     <div className={css.con}>

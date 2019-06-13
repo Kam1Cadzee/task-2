@@ -16,6 +16,6 @@ class Toggable extends React.Component {
   }
 }
 Toggable.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.func.isRequired,
 };
 export default Toggable;

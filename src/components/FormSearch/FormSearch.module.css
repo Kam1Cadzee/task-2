@@ -1,0 +1,15 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  justify-content: center;
+
+  margin: auto;
+  padding: 30px;
+}
+@media screen and (max-width: 500px) {
+  .form input {
+    flex: 100%;
+    margin-bottom: 20px;
+  }
+}

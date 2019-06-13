@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  padding-top: 6px;
+  background-color: #e8eaf6;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+}
+@media screen and (max-width: 700px) {
+  .container {
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,16 @@
+.enter {
+  background-color: #fff;
+}
+.enterActive {
+  transition: background-color 300ms;
+  background-color: #e8eaf6;
+}
+.enterDone {
+  transition: background-color 100ms;
+  background-color: #fff;
+}
+.exit {
+  display: none;
+}
+.exitActive {
+}

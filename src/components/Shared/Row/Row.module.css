@@ -1,0 +1,17 @@
+.row {
+  font-family: Roboto, sans-serif;
+}
+.row + .row {
+  border-top: 1px solid #303f9f;
+}
+
+.row:hover {
+  transition: background-color 400ms;
+  background-color: #9fa8da;
+}
+.rowSelect {
+  composes: row;
+  text-decoration: line-through;
+  border-bottom: 1px solid #000;
+  font-weight: 700;
+}

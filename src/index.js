@@ -1,12 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import { applyMiddleware, createStore } from 'redux';
+import thunk from 'redux-thunk';
+import { Provider } from 'react-redux';
+import { BrowserRouter, Route } from 'react-router-dom';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import reducer from './redux/University/universityReducer';
+import LocalStorage from './util/storage';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+document.addEventListener('DOMContentLoaded', () => {
+  const init = LocalStorage.load();
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  // Поключение thunk для асинхроного действия
+  const middlewares = [thunk];
+  const enhancer = applyMiddleware(...middlewares);
+  const store = createStore(reducer, init, composeWithDevTools(enhancer));
+
+  window.onbeforeunload = function() {
+    LocalStorage.save(store);
+  };
+  ReactDOM.render(
+    <Provider store={store}>
+      <BrowserRouter>
+        <Route path="/" component={App} />
+      </BrowserRouter>
+    </Provider>,
+    document.getElementById('root'),
+  );
+});

@@ -1,0 +1,45 @@
+.link {
+  text-decoration: none;
+  font-size: 16px;
+  width: 20px;
+}
+.link:visited {
+  color: #303f9f;
+}
+.activeLink {
+  animation-name: activePage;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+}
+@keyframes activePage {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.4);
+  }
+}
+.con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+  color: #303f9f;
+  margin: auto;
+  margin-top: 20px;
+  min-width: 300px;
+  margin-bottom: 40px;
+}
+.link + .link {
+  margin-left: 16px;
+}
+
+.spreadEnd {
+  margin-left: 6px;
+  margin-right: 6px;
+  font-weight: 700;
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: #303f9f;
+}

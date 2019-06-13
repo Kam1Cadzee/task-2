@@ -1,0 +1,17 @@
+.btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #5c6bc0;
+  color: #ffffff;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none;
+}
+
+.btnActive {
+  composes: btn;
+  transition: background-color 300ms;
+  background-color: #303f9f;
+}

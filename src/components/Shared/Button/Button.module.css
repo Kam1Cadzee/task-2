@@ -1,0 +1,22 @@
+.btn {
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #303f9f;
+  color: #fff;
+  border-radius: 5px;
+  font-family: Roboto, sans-serif;
+}
+.btn:hover {
+  transition: background-color 200ms;
+  background-color: #5c6bc0;
+}
+.btnText {
+  composes: btn;
+  background-color: transparent;
+  color: #000;
+}
+.btnText:hover {
+  transition: background-color 200ms;
+  background-color: #e8eaf6;
+}
